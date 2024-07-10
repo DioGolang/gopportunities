@@ -1,20 +1,29 @@
 
-GET http://localhost:8080/api/v1/openings
+GET http://localhost:8080/jobs
 
 ###
 
-GET http://localhost:8080/api/v1/opening
+POST http://localhost:8080/jobs
+Content-Type: application/json
 
-###
-
-POST http://localhost:8080/api/v1/opening
-
-###
-
-PUT http://localhost:8080/api/v1/opening
-
-###
-
-DELETE http://localhost:8080/api/v1/opening
-
-
+{
+  "title": "Desenvolvedor Full Stack",
+  "role": "Desenvolvimento",
+  "description": "Descrição do trabalho de desenvolvedor full stack",
+  "requirements_qualifications": [
+    "Experiência com JavaScript e frameworks front-end",
+    "Experiência com linguagens de back-end como Node.js ou Python"
+  ],
+  "working_model": "remote",
+  "process_steps": [
+    "Análise de requisitos",
+    "Desenvolvimento de funcionalidades",
+    "Testes unitários e de integração"
+  ],
+  "company": "Empresa XPTO",
+  "location": "São Paulo, SP",
+  "salary": 8000,
+  "link": "https://www.exemplo.com/vagas/123",
+  "expiration_date": "2024-08-10T00:00:00Z",
+  "additional_information": "Benefícios: vale transporte, plano de saúde."
+}
