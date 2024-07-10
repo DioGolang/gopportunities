@@ -40,11 +40,11 @@ Crie um arquivo .env na raiz do projeto com as seguintes variáveis de ambiente:
 
 
 ```
-DB_HOST=db
+POSTGRES_HOST=db
 DB_PORT=5432
-DB_USER=yourusername
-DB_PASSWORD=yourpassword
-DB_NAME=gopportunities
+POSTGRES_USER=yourusername
+POSTGRES_PASSWORD=yourpassword
+POSTGRES_DB=gopportunities
 
 ```
 Substitua yourusername e yourpassword pelos seus próprios valores de usuário e senha do PostgreSQL.
