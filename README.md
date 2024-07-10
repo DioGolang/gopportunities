@@ -20,18 +20,6 @@ cd gopportunities
 ```
 ---
 
-## Configurando o Banco de Dados
-O projeto utiliza PostgreSQL como banco de dados. Certifique-se de ter o Docker instalado e em execução. A configuração do banco de dados pode ser feita utilizando Docker Compose:
-
-```
-# No diretório raiz do projeto
-docker-compose up -d
-
-```
-Isso iniciará um container Docker com PostgreSQL configurado de acordo com o arquivo docker-compose.yml fornecido.
-
----
-
 ## Configuração do Ambiente
 
 
@@ -51,8 +39,23 @@ Substitua yourusername e yourpassword pelos seus próprios valores de usuário e
 
 ---
 
+## Configurando o Banco de Dados
+O projeto utiliza PostgreSQL como banco de dados. Certifique-se de ter o Docker instalado e em execução. A configuração do banco de dados pode ser feita utilizando Docker Compose:
+
+```
+# No diretório raiz do projeto
+docker-compose up -d
+
+```
+Isso iniciará um container Docker com PostgreSQL configurado de acordo com o arquivo docker-compose.yml fornecido.
+
+
+
+
+---
+
 ## Instalando Dependências
-Certifique-se de que todas as dependências do projeto estejam instaladas. Use o go mod para isso:
+Certifique-se de que todas as dependências do projeto estejam instaladas. Use o go mod para isso no container do golang:
 
 ```
 go mod tidy
